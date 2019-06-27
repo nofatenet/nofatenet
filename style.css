@@ -1,0 +1,93 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #5B6871;
+  background-color: #333;
+}
+
+.author {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+    font-size: 12em;
+    line-height: 1;
+    text-align: center;
+	margin: 0 auto;
+
+	background-image: url(https://i1.sndcdn.com/artworks-000138285318-vaqqpz-t500x500.jpg);
+	background-position: 50%;
+/*
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+*/
+	letter-spacing: -38px;
+	text-indent: 0px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+
+  transform: rotateZ(-11deg);
+
+  text-shadow: 3px 75px rgba(22,92,82, 0.1);
+  opacity: 0.8;
+
+  animation-name: anima;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anima {
+  0% {opacity: 0.8; filter: blur(4px);}
+  50% {opacity: 0.2;}
+  100% {opacity: 0.8;letter-spacing: -38px;}
+}
+
+.svg {
+ position: relative;
+ top: -22em;
+ left: -6em;
+ opacity:0.01;
+}
+.svg:hover {
+ opacity:0.1;
+ transition: 2s;
+}
+
+a:link, a:visited {
+  background-color: #111111;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: #333333;
+  opacity: 0.3;
+}
+.link
+{
+  font-family: 'Libre Barcode 39', cursive;
+  font-size: 6em;
+  z-index: 100;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  letter-spacing: 9px;
+}
+
+.disc
+{
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  z-index: 100;
+  color: #FFFFFF;
+  opacity: 0.3;
+  letter-spacing: 31px;
+  text-decoration: none;
+}
